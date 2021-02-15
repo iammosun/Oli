@@ -1,0 +1,248 @@
+/* Global styles
+----------------------------------------------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* above is to reset the default css */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.body-wrapper {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  background: url(../images/bgsunset.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
+/* .body-wrapper section===================================================== */
+.light {
+  font-weight: 200;
+}
+
+img {
+  height: 25px;
+  width: 25px;
+  margin-top: 30px;
+}
+
+.oli-wrapper {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.main-wrapper {
+  padding: 0;
+}
+
+.creative {
+  font-weight: 300;
+  font-size: 60px;
+  padding: 0;
+  margin-top: 60px
+}
+
+.creative p {
+  margin: 20px 0;
+}
+
+.creative p:first-child {
+  margin-bottom: 0;
+}
+
+.creative p:last-child {
+  margin-top: 0px;
+}
+
+.construction {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.email {
+  display: inline-flex;
+}
+
+.notify {
+  background-color: blue;
+}
+
+.notify a {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 0;
+}
+
+.notify p {
+  margin: 7px 0;
+  text-align: center;
+  padding: 0;
+}
+
+.placeholder {
+  width: 380px;
+  height: 30px;
+}
+
+.contact-wrapper ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.terms p {
+  padding: 0 15px;
+}
+
+.terms a {
+  color: white;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+.footer-wrapper .all-rights {
+  margin-left: 15px;
+}
+
+
+
+
+/* Responsive styles__________________________ */
+@media screen and (min-width:850px) {
+
+  .main-wrapper {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+  }
+
+  .body-wrapper {
+    display: grid;
+    grid-template: 50px 1fr 50px / 50px 1fr 50px;
+  }
+
+  .oli-wrapper {
+    background-color: rgba(0, 0, 0, 0.4);
+    grid-column: 2 / 3;
+  }
+
+  .none {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .empty-wrapper {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .email {
+    display: inline-flex;
+    margin-top: 40px;
+  }
+
+  .notify {
+    background-color: blue;
+    width: 160px;
+    height: 30px;
+  }
+
+  .contact-wrapper {
+    background-color: rgba(0, 0, 0, 0.4);
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .footer-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  
+  .contact-wrapper ul {
+    margin-top: 130px;
+    padding: 0;
+  }
+
+  .terms {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -53px;
+  }
+
+}
+
+@media screen and (max-width:850px){
+  .oli-wrapper{
+
+  }
+  .main-wrapper{
+    padding: 0;
+    margin: 5px 0;
+    /* line-height: 1; */
+  }
+  .none{
+    color: rgba(0, 0, 255, 0.4);
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+  .body-wrapper{
+    background: url(../images/bgsunset.jpg) no repeat top right/cover;
+  }
+  .contact-wrapper{
+    background-color: rgba(0, 0, 0, 1);
+    height: 70px;
+    margin-top: 50px
+  }
+  .contact-wrapper ul{
+    display: flex;
+    margin: 0 15px;
+  }
+  .contact-wrapper li{
+    padding: 5px;
+    margin: 0 10px;
+  }
+  .content-wrapper{
+    max-width: 850px;
+    width: 60%;
+    margin: 0 auto;
+    /* padding: 60px 0; */
+  }
+  .wrapper{
+    margin-left: 15px;
+    padding: 0;
+  }
+  .creative{
+    margin: 0;
+    padding: 0;
+  }
+  .creative p{
+    margin: 0;
+  }
+  .construction{
+    line-height: 1.5;
+    margin-top: 0;
+  }
+  .construction p{
+    margin: 0 15px 0 0;
+  }
+  .email{
+    margin-top: 15px;
+  }
+
+}
